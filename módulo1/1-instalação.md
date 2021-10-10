@@ -7,7 +7,7 @@ Na instalação é onde muitos se perdem, porém é algo muito simples de ser fe
 Acesse o GitHub do Y_Less e baixe a biblioteca YSI.
 
 Link do GitHub: https://github.com/pawn-lang/YSI-Includes<br>
-Link para download direto: https://www.mediafire.com/file/3uv0pkftaffdzj2/YSI-Includes.zip/file
+Link para download direto: https://www.mediafire.com/file/koiqd2q9m2thelf/YSI-Includes.zip/file
 
 Se optou em baixar pelo GitHub, clique em Code e depois em Download Zip como na imagem.
 
