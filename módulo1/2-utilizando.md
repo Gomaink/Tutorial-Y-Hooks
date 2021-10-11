@@ -2,33 +2,32 @@
     2. Utilizando.
 </h1>
 
-Primeiro de tudo, precisamos criar uma pasta onde se localizarÃ¡ os mÃ³dulos de seu Gamemode, ele deve estar na pasta principal de seu GM e nÃ£o pode conter espaÃ§os ou nÃºmeros, vocÃª pode optar por algo como: modulos ou modules.
+En primer lugar, necesitamos crear una carpeta donde se ubicarán los módulos del gamemode, debe estar en la carpeta principal de tu GM y no puede contener espacios ni números, puedes elegir algo como: "modulos" o "modules". 
 
 <p align="center">
   <img src="/images/image4.png" width="350" title="hover text">
 </p>
 
-ApÃ³s a criaÃ§Ã£o da pasta, devemos criar os seus mÃ³dulos, use uma extensÃ£o como .pwn/.inc/.sys.
+Después de crear la carpeta, debemos crear sus módulos, use una extensión como .pwn, .inc o .sys.
 
 <p align="center">
   <img src="/images/image5.png" width="350" title="hover text">
 </p>
 
-Dentro do arquivo criado, podemos comeÃ§ar definindo o uso da include y_hooks que serÃ¡ responsÃ¡vel pela modularizaÃ§Ã£o de seu Gamemode, use: 
-#include <YSI-Includes\YSI_Coding\y_hooks>
+Dentro del archivo creado, podemos comenzar por definir el uso de la librería y_hooks que será responsable de la modularización de tu gamemode, usa: #include <YSI-Include\YSI_Coding\y_hooks> 
 
 <p align="center">
   <img src="/images/image6.png" width="350" title="hover text">
 </p>
 
-ApÃ³s isso, vocÃª precisa vincular o mÃ³dulo ao Gamemode, vocÃª pode usar:
+Después de eso, debe incluir el módulo al gamemode, puede usar:
 
-#include "../suapastademodulos/nomedoseumodulo"
+#include "../carpeta de los módulos/nombre del módulo"
 
-VocÃª deve fazer isso antes da main ou no final do gamemode.
+Debes hacer esto antes del script principal o al final del script. 
 
 <p align="center">
   <img src="/images/image8.png" width="350" title="hover text">
 </p>
 
-IMPORTANTE: VocÃª deve definir a include y_hooks em todos os seus mÃ³dulos!
+IMPORTANTE: ¡Debes incluir y_hooks en todos tus módulos! 

@@ -1,15 +1,15 @@
 <h1>
-    4. √ötil.
+    4. ⁄til.
 </h1>
 
-Algumas informa√ß√µes √∫teis estar√£o nesta aula.
+En esta clase habr· informaciÛn ˙til.
 
-Includes - Ao declarar uma include no GM principal, ela ser√° vinculada a todos os m√≥dulos, por tanto n√£o √© necess√°rio declarar uma include duas vezes.
+Includes: Al declarar una inclusiÛn en el script principal, se vincular· a todos los mÛdulos, por lo que no es necesario declarar una inclusiÛn dos veces.
 
-Comandos - A utiliza√ß√£o de comandos √© totalmente permitida nos m√≥dulos, voc√™ pode utilizar tanto a Callback nativa quanto um processador de comandos como ZCMD ou Pawn.CMD, basta declara-lo no GM principal.
+Comandos: El uso de comandos est· totalmente permitido en los mÛdulos, puede usar el callback nativo o un procesador de comandos como ZCMD o Pawn.CMD, simplemente decl·relo en el script principal.
 
-√ìrdem dos m√≥dulos: J√° citei antes mas √© importante; A ordem em que voc√™ declara seu m√≥dulo no seu GM principal vai interferir na ordem de acontecimentos, por exemplo: Voc√™ criou um m√≥dulo onde d√° pontos para uma pessoa ao matar algu√©m e tamb√©m cria um m√≥dulo onde salva as contas ao desconectar, se voc√™ declarar o m√≥dulo de salvar ao desconectar antes do m√≥dulo de dar pontos a pessoa, n√£o ir√° salvar os pontos pelo fato da ordem.
+Orden de los mÛdulos: Lo he mencionado antes, pero es importante; El orden en el que incluyas tu mÛdulo en tu script principal interferir· con el orden de los callbacks, por ejemplo: Si creaste un mÛdulo donde le das puntos a una persona por matar a alguien y tambiÈn creas un mÛdulo donde guardas cuentas al desconectarse, si usted declara el mÛdulo de guardar al desconectarse antes de que el mÛdulo dÈ puntos a la persona, no guardar· los puntos debido al orden.
 
-Exagear - Provavelmente a biblioteca YSI n√£o ser√° compilada no Exagear, impossibilitando o uso da modulariza√ß√£o pelo y_hooks. :(
+Exagear: Probablemente la biblioteca YSI no es compatible con Exagear, lo que hace imposible el uso de la modularizaciÛn por y_hooks. :(
 
-Erros: Qualquer erro ortogr√°fico ou alguma d√∫vida na utiliza√ß√£o, me contate em meu discord: Gomainkk#3403
+Errores: Cualquier error de ortografÌa o pregunta, cont·cteme en mi discord: Gomainkk#3403 

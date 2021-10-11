@@ -2,12 +2,12 @@
     3. Callbacks.
 </h1>
 
-Para a utilizaÃ§Ã£o de callbacks em mÃ³dulos Ã© bem simples, vocÃª deve apenas trocar o nome "public" por "hook" em seu mÃ³dulo, algo como:
+Usar callbacks en módulos es muy simple, simplemente cambie el nombre "public" a "hook" en su módulo, ejemplo: 
 
 <p align="center">
   <img src="/images/image7.png" width="350" title="hover text">
 </p>
 
-ApÃ³s isso vocÃª pode utilizar a callback dentro de seu mÃ³dulo sem problemas.
+Después de eso, puede usar el callback dentro de su módulo sin ningún problema.
 
-IMPORTANTE: A ordem em que vocÃª declara seu mÃ³dulo no seu GM principal vai interferir na ordem de acontecimentos, por exemplo: VocÃª criou um mÃ³dulo onde dÃ¡ pontos para uma pessoa ao matar alguÃ©m e tambÃ©m cria um mÃ³dulo onde salva as contas ao desconectar, se vocÃª declarar o mÃ³dulo de salvar ao desconectar antes do mÃ³dulo de dar pontos a pessoa, nÃ£o irÃ¡ salvar os pontos pelo fato da ordem (Espero que isso tenha ficado claro pois Ã© muito importante).
+IMPORTANTE: El orden en el que declares tu módulo en tu script principal interferirá con el orden de los hooks, por ejemplo: Si creaste un módulo donde le das puntos a una persona por matar a alguien y también creas un módulo donde guardas cuentas al desconectarse, si incluyes el módulo de guardar al desconectarse antes del módulo de dar los puntos, no guardará los puntos debido al orden (espero que esté claro, ya que es muy importante).
