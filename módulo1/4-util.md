@@ -12,4 +12,4 @@ Comandos - A utilização de comandos é totalmente permitida nos módulos, voc�
 
 Exagear - Provavelmente a biblioteca YSI não será compilada no Exagear, impossibilitando o uso da modularização pelo y_hooks. :(
 
-Erros: Qualquer erro ortográfico ou alguma dúvida na utilização, me contate em meu discord: Gomainkk#3403
+Erros: Qualquer erro ortográfico ou alguma dúvida na utilização, me contate em meu discord: gomaink#3403
