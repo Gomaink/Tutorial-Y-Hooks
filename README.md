@@ -13,7 +13,7 @@
    
 <br>
 
-# Instalação.
+## 🚀Instalação
 
 Na instalação é onde muitos se perdem, porém é algo muito simples de ser feito.
 
@@ -42,7 +42,7 @@ Após a instalação, extraia o arquivo após isso irá lhe dar uma pasta com o 
 
 Clique sobre a pasta, pressione o botão direito do mouse e clique em copiar, após isso vá até a pasta de seu gamemode e cole em pawno/includes.
 
-# Utilização.
+## ☕ Utilização
 
 Primeiro de tudo, precisamos criar uma pasta onde se localizará os módulos de seu Gamemode, ele deve estar na pasta principal de seu GM e não pode conter espaços ou números, você pode optar por algo como: modulos ou modules.
 
@@ -75,7 +75,7 @@ Você deve fazer isso antes da main ou no final do gamemode.
 
 IMPORTANTE: Você deve definir a include y_hooks em todos os seus módulos!
 
-# Callbacks.
+## 📞 Callbacks
 
 Para a utilização de callbacks em módulos é bem simples, você deve apenas trocar o nome "public" por "hook" em seu módulo, algo como:
 
@@ -87,7 +87,7 @@ Após isso você pode utilizar a callback dentro de seu módulo sem problemas.
 
 IMPORTANTE: A ordem em que você declara seu módulo no seu GM principal vai interferir na ordem de acontecimentos, por exemplo: Você criou um módulo onde dá pontos para uma pessoa ao matar alguém e também cria um módulo onde salva as contas ao desconectar, se você declarar o módulo de salvar ao desconectar antes do módulo de dar pontos a pessoa, não irá salvar os pontos pelo fato da ordem (Espero que isso tenha ficado claro pois é muito importante).
 
-# Útil.
+## 📃 Útil.
 
 Algumas informações úteis estarão nesta aula.
 
