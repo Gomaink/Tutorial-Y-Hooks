@@ -13,7 +13,7 @@
    
 <br>
 
-## 🚀Instalação
+## 🚀 Instalação
 
 Na instalação é onde muitos se perdem, porém é algo muito simples de ser feito.
 
