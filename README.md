@@ -139,15 +139,38 @@ Com esses passos, você estará pronto para criar módulos organizados e vincul�
 
 ## 📞 Callbacks
 
-Para a utilização de callbacks em módulos é bem simples, você deve apenas trocar o nome "public" por "hook" em seu módulo, algo como:
+O uso de callbacks em módulos é bastante simples e segue uma estrutura padronizada graças ao y_hooks. Veja como configurar corretamente e entender a importância da ordem de declaração.
 
+### 1. Substituindo public por hook
+
+Ao definir callbacks dentro de seus módulos, substitua a palavra-chave public por hook. Isso permite que o callback seja gerenciado pelo sistema de modularização do y_hooks.
+
+Exemplo:
+```c
+hook OnPlayerDeath(playerid, killerid, reason)  
+{  
+    // Seu código aqui  
+}  
+```
 <p align="center">
-  <img src="/images/image7.png" width="350" title="hover text">
-</p>
+  <img src="/images/image7.png" width="350" title="Exemplo de Callback com hook">
+</p>  
 
-Após isso você pode utilizar a callback dentro de seu módulo sem problemas.
+Com isso, você pode usar as callbacks normalmente dentro do módulo, sem conflitos com o gamemode principal.
 
-IMPORTANTE: A ordem em que você declara seu módulo no seu GM principal vai interferir na ordem de acontecimentos, por exemplo: Você criou um módulo onde dá pontos para uma pessoa ao matar alguém e também cria um módulo onde salva as contas ao desconectar, se você declarar o módulo de salvar ao desconectar antes do módulo de dar pontos a pessoa, não irá salvar os pontos pelo fato da ordem (Espero que isso tenha ficado claro pois é muito importante).
+### 2. Atenção à Ordem de Declaração
+
+A ordem em que os módulos são declarados no seu gamemode principal afeta diretamente o comportamento das callbacks.
+
+Por exemplo:
+- Módulo A: Dá pontos ao jogador ao matar alguém.
+- Módulo B: Salva os dados da conta ao desconectar.
+
+Se você incluir o Módulo B (salvar dados) antes do Módulo A (dar pontos), os pontos concedidos ao jogador podem não ser salvos, porque o módulo de salvamento será executado antes de o módulo de pontuação completar sua lógica.
+
+Para evitar problemas:
+- Organize seus módulos no arquivo principal com base na prioridade das ações.
+- Certifique-se de que as ações mais importantes sejam concluídas antes das menos críticas.
 
 ## 📃 Útil.
 
