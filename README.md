@@ -174,14 +174,30 @@ Para evitar problemas:
 
 ## 📃 Útil.
 
-Algumas informações úteis estarão nesta aula.
+Nesta seção, você encontrará algumas informações e dicas importantes para utilizar módulos de forma eficiente e evitar problemas comuns.
 
-Includes - Ao declarar uma include no GM principal, ela será vinculada a todos os módulos, por tanto não é necessário declarar uma include duas vezes.
+### 1. Includes nos Módulos
+- Ao declarar uma include no gamemode principal, ela será automaticamente vinculada a todos os módulos.
+- Não é necessário declarar a mesma include em cada módulo.
+- Isso mantém seu código mais limpo e evita redundâncias.
 
-Comandos - A utilização de comandos é totalmente permitida nos módulos, você pode utilizar tanto a Callback nativa quanto um processador de comandos como ZCMD ou Pawn.CMD, basta declara-lo no GM principal.
+### 2. Comandos nos Módulos
+- Você pode criar comandos dentro dos módulos sem restrições.
+- Use tanto a callback nativa OnPlayerCommandText quanto processadores de comandos como ZCMD ou Pawn.CMD.
+- Basta declarar o processador no gamemode principal, e ele estará disponível para os módulos.
 
-Órdem dos módulos: Já citei antes mas é importante; A ordem em que você declara seu módulo no seu GM principal vai interferir na ordem de acontecimentos, por exemplo: Você criou um módulo onde dá pontos para uma pessoa ao matar alguém e também cria um módulo onde salva as contas ao desconectar, se você declarar o módulo de salvar ao desconectar antes do módulo de dar pontos a pessoa, não irá salvar os pontos pelo fato da ordem.
 
-Exagear - Provavelmente a biblioteca YSI não será compilada no Exagear, impossibilitando o uso da modularização pelo y_hooks. :(
+### 3. Ordem de Declaração dos Módulos
+- A ordem dos módulos importa!
+- Os módulos são processados na sequência em que são declarados no gamemode principal.
+- Por exemplo:
+- Módulo A: Dá pontos ao jogador.
+- Módulo B: Salva os dados do jogador.
+- Se o Módulo B for declarado antes do Módulo A, os pontos podem não ser salvos.
 
-Erros: Qualquer erro ortográfico ou alguma dúvida na utilização, me contate em meu discord: gomaink#3403
+### Dica: 
+Sempre organize seus módulos com base nas prioridades de execução.
+
+### 4. Compatibilidade com Exagear
+- Infelizmente, a biblioteca YSI (incluindo o y_hooks) pode não ser compilada corretamente no Exagear, tornando impossível a modularização neste ambiente.
+- Caso precise usar Exagear, considere uma abordagem manual de modularização ou busque alternativas mais simples.
