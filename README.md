@@ -65,36 +65,77 @@ Após mover os arquivos, certifique-se de que o diretório pawno/includes conté
 
 ## ☕ Utilização
 
-Primeiro de tudo, precisamos criar uma pasta onde se localizará os módulos de seu Gamemode, ele deve estar na pasta principal de seu GM e não pode conter espaços ou números, você pode optar por algo como: modulos ou modules.
+Vamos aprender como criar uma pasta dedicada aos módulos e configurá-los corretamente.
+
+### 1. Criando a Pasta de Módulos
+
+Antes de tudo, é necessário criar uma pasta onde os módulos serão armazenados.
+- Ela deve estar na pasta principal do seu gamemode.
+- Não utilize espaços ou números no nome da pasta.
+- Um bom nome seria algo como modulos ou modules.
 
 <p align="center">
-  <img src="/images/image4.png" width="350" title="hover text">
-</p>
+  <img src="/images/image4.png" width="350" title="Pasta de Módulos">
+</p>  
 
-Após a criação da pasta, devemos criar os seus módulos, use uma extensão como .pwn/.inc/.sys.
 
-<p align="center">
-  <img src="/images/image5.png" width="350" title="hover text">
-</p>
+### 2. Criando os Arquivos de Módulos
 
-Dentro do arquivo criado, podemos começar definindo o uso da include y_hooks que será responsável pela modularização de seu Gamemode, use: 
-#include <YSI-Includes\YSI_Coding\y_hooks>
+Dentro da pasta criada, você precisará adicionar arquivos para os módulos.
+- Esses arquivos podem ter extensões como .pwn, .inc, ou .sys, dependendo do propósito de cada módulo.
 
 <p align="center">
-  <img src="/images/image6.png" width="350" title="hover text">
-</p>
+  <img src="/images/image5.png" width="350" title="Arquivos de Módulos">
+</p>  
 
-Após isso, você precisa vincular o módulo ao Gamemode, você pode usar:
 
-#include "../suapastademodulos/nomedoseumodulo"
+### 3. Configurando os Módulos
 
-Você deve fazer isso antes da main ou no final do gamemode.
+Agora, vamos configurar os módulos para que funcionem corretamente no seu gamemode.
+
+#### a) Incluindo a Biblioteca y_hooks
+
+Cada módulo deve incluir a biblioteca y_hooks, que será responsável por gerenciar a modularização do código.
+Adicione o seguinte código no início de cada arquivo de módulo:
+
+```c
+#include <YSI-Includes\YSI_Coding\y_hooks>  
+```
 
 <p align="center">
-  <img src="/images/image8.png" width="350" title="hover text">
-</p>
+  <img src="/images/image6.png" width="350" title="Include y_hooks">
+</p>  
 
-IMPORTANTE: Você deve definir a include y_hooks em todos os seus módulos!
+
+Nota: A biblioteca y_hooks é parte da biblioteca YSI, então certifique-se de que a YSI já esteja instalada no seu projeto (veja a seção anterior sobre instalação).
+
+#### b) Vinculando os Módulos ao Gamemode
+
+Para que o gamemode reconheça os módulos criados, você precisa vinculá-los. Isso é feito com o comando #include, apontando para a localização do módulo.
+Adicione a seguinte linha no seu gamemode:
+
+```c
+#include "../suapastademodulos/nomedoseumodulo"  
+```
+
+- suapastademodulos: Substitua pelo nome da pasta onde os módulos estão armazenados (por exemplo, modulos).
+- nomedoseumodulo: Substitua pelo nome do arquivo do módulo que você deseja incluir.
+
+### Dica: 
+Você pode organizar as inclusões no início do seu gamemode (antes da função main) ou no final do arquivo, conforme preferir.
+
+<p align="center">
+  <img src="/images/image8.png" width="350" title="Vinculando o Módulo ao Gamemode">
+</p>  
+
+
+### 4. Regras Importantes
+- Inclua y_hooks em Todos os Módulos:
+Cada módulo criado deve ter a biblioteca y_hooks incluída no topo do arquivo. Sem isso, a modularização não funcionará corretamente.
+- Evite Nomes Duplicados:
+Certifique-se de que os nomes dos módulos e funções não entrem em conflito com outros módulos ou com o gamemode principal.
+
+Com esses passos, você estará pronto para criar módulos organizados e vinculá-los ao seu gamemode. Modularizar o código não apenas melhora a organização, mas também facilita a adição de novas funcionalidades no futuro.
 
 ## 📞 Callbacks
 
