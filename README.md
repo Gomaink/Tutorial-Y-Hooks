@@ -15,32 +15,53 @@
 
 ## 🚀 Instalação
 
-Na instalação é onde muitos se perdem, porém é algo muito simples de ser feito.
+A instalação da biblioteca YSI, criada por Y_Less, é uma etapa fundamental para muitos projetos no SA:MP. Apesar de parecer complicada, é um processo simples e rápido.
 
-Acesse o GitHub do Y_Less e baixe a biblioteca YSI.
+### 1. Baixando a Biblioteca
 
-Link do GitHub: https://github.com/pawn-lang/YSI-Includes<br>
-Link para download direto: https://www.mediafire.com/file/koiqd2q9m2thelf/YSI-Includes.zip/file
-
-Se optou em baixar pelo GitHub, clique em Code e depois em Download Zip como na imagem.
-
-<p align="center">
-  <img src="/images/image2.png" width="350" title="hover text">
-</p>
-
-Caso contrário e você tenha optado pelo mediafire, apenas clique no botão download como na imagem.
+Acesse o GitHub oficial do Y_Less ou opte pelo download direto via MediaFire.
+- GitHub: https://github.com/pawn-lang/YSI-Includes
+- Para baixar: clique no botão Code e depois em Download ZIP, como mostrado na imagem:
 
 <p align="center">
-  <img src="/images/image1.png" width="350" title="hover text">
-</p>
+  <img src="/images/image2.png" width="350" title="Baixando pelo GitHub">
+</p>  
 
-Após a instalação, extraia o arquivo após isso irá lhe dar uma pasta com o nome "YSI-Includes" ou algo parecido.
+- MediaFire: https://www.mediafire.com/file/koiqd2q9m2thelf/YSI-Includes.zip/file
+- Para baixar: clique no botão Download, como indicado na imagem:
 
 <p align="center">
-  <img src="/images/image3.png" width="350" title="hover text">
-</p>
+  <img src="/images/image1.png" width="350" title="Baixando pelo MediaFire">
+</p>  
 
-Clique sobre a pasta, pressione o botão direito do mouse e clique em copiar, após isso vá até a pasta de seu gamemode e cole em pawno/includes.
+Ambas as opções oferecem o mesmo conteúdo, escolha a que for mais conveniente.
+
+### 2. Extraindo os Arquivos
+
+Após concluir o download:
+#### 1.	Localize o arquivo ZIP (geralmente chamado YSI-Includes.zip).
+#### 2.	Extraia o conteúdo utilizando um programa como WinRAR ou 7-Zip.
+#### 3.	Após a extração, você verá uma pasta chamada YSI-Includes ou algo similar:
+
+<p align="center">
+  <img src="/images/image3.png" width="350" title="Arquivos Extraídos">
+  </p>  
+
+
+### 3. Movendo os Arquivos
+
+Agora, é hora de integrar a biblioteca ao seu projeto:
+#### 1.	Clique com o botão direito na pasta extraída e selecione Copiar.
+#### 2.	Navegue até o diretório onde seu gamemode está localizado.
+#### 3.	Dentro da pasta do gamemode, vá para pawno/includes.
+#### 4.	Cole a pasta YSI-Includes nesse local.
+
+### 4. Conferindo a Instalação
+
+Após mover os arquivos, certifique-se de que o diretório pawno/includes contém os arquivos necessários da biblioteca YSI. Se tudo foi feito corretamente, você poderá utilizá-la no seu gamemode sem problemas.
+
+### Dica: 
+É importante garantir que a versão da biblioteca seja compatível com o restante do seu projeto. Sempre que possível, utilize a versão mais recente disponível no GitHub.
 
 ## ☕ Utilização
 
